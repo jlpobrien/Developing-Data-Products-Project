@@ -1,11 +1,15 @@
 # Developing-Data-Products-Project
 
-- This project develops a tool to predict son's height from their father's.
+-Coursera **Developing Data Products** Peer-graded Course Project *Shiny Application and Reproducible Pitch*
 
-- It uses Francis Galton's famous data, which was notably later analysed by Karl Pearson
+-- This project develops a tool to predict son's height given their father's height.
 
-- The method is a simple linear regression
+-- It uses Francis Galton's famous data, which was notably later used by Karl Pearson
 
-- The dataset "father.son" can be found in the "UsingR" package
+-- The method is a simple linear regression
 
-- Linked to Shiny App:
+-- The dataset ```father.son``` can be found in the ```UsingR``` package
+
+- Link to Shiny App:
+
+- R Markdown Presentation:
