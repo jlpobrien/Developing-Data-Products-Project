@@ -10,6 +10,6 @@
 
 -- The dataset ```father.son``` can be found in the ```UsingR``` package
 
-- Link to Shiny App:
+- Link to Shiny App: https://jlpobrien.shinyapps.io/DevelopingDataProductsProject/
 
-- R Markdown Presentation:
+- R Markdown Presentation: https://rpubs.com/jplobrien/932202
