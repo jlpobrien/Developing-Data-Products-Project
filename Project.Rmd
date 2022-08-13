@@ -1,0 +1,68 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+subtitle: "Heights of Fathers and Sons"
+date: '2022-08-12'
+output: slidy_presentation
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About the Project
+
+This peer assessed assignment has two parts. First, you will create a Shiny application and deploy it on Rstudio's servers. Second, you will use Slidify or Rstudio Presenter to prepare a reproducible pitch presentation about your application.
+
+Your Shiny Application
+
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+
+2. Deploy the application on Rstudio's shiny server
+
+3. Share the application link by pasting it into the provided text box
+
+4. Share your server.R and ui.R code on github
+
+## About the Project
+
+- This project develops a tool to predict son's height from their father's.
+
+- It uses Karl Peasons's data, which was influenced by Francis Galton's famous study
+
+- The method is a simple linear regression
+
+- The dataset ```father.son``` can be found in the ```UsingR``` package
+
+
+## Summary of Data
+
+```{r cars, echo = FALSE, message=FALSE}
+library(UsingR)
+galton <- father.son
+colnames(galton) <- c("father", "son")
+summary(father.son)
+```
+
+## Plot of Data
+
+```{r pressure, echo=FALSE, message=FALSE, warning=FALSE}
+model <- lm(son ~ father, data = galton)
+plot(galton$father, galton$son, xlab = "Father's Height", main="Heights of Sons and Fathers (Inches)", 
+             ylab = "Son's Height", bty = "o", pch = 16, col="grey60", height=50, width=50,
+             xlim = c(55, 85), ylim = c(55, 85),
+              
+            
+          abline(model, col = "darkblue", lwd = 2))
+          abline(coef = c(0,1), type="l", lty=2)
+```
+
+## Links to the Project
+
+-Github: https://github.com/jlpobrien/Developing-Data-Products-Project
+
+
+-Shiny: https://jlpobrien.shinyapps.io/DevelopingDataProductsProject/
+
+
+
