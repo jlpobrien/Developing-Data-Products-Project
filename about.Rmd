@@ -1,0 +1,16 @@
+# Coursera Developing Data Products 
+## Course Project: Shiny Application and Reproducible Pitch
+
+#### This project develops a tool to predict son's height given their father's height.
+
+
+#### It uses data collected by Karl Pearson around 1903, which was infuenced by Francis Galton's past famous work.
+
+
+#### Data includes 1078 measurements.
+
+
+#### The method is a linear regression. The 45 degree line shows that the heights of fathers and sons were not equal.
+
+
+#### The dataset ```father.son``` can be found in the ```UsingR``` package.
